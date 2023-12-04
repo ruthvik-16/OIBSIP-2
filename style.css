@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    color: rgb(230, 157, 22);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(171, 166, 222);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: beige;
+}
+
+.left {
+    font-size: 2rem;
+    color:#555;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 75px 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+/* .rightSection {} */
+
+.rightSection img {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.blue {
+    color: blueviolet;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    position: relative;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 50%;
+}
+
+.skills-text-container {
+    width: 40%; /* Adjust the width as needed */
+}
+
+.skills-text {
+    font-size: 18px;
+    color: #555;
+    margin: 20px;
+    position: right;
+
+}
+
+.secondSection:hover .skills-text-container {
+    display: block;
+    animation: popFromLeft 0.5s ease;
+}
+
+@keyframes popFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.text-gray {
+    font-size: 24px;
+    color: #333;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #333;
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.graph {
+    position: relative;
+    width: 50%;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.thirdSection {
+    text-align: justify;
+}
+
+.project-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-image {
+    width: 45%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.1);
+}
+
+.fourthSection {
+    margin-top: 60px;
+    text-align: center;
+
+}
+
+.contact-content {
+    margin-top: 40px;
+}
+
+.linkedin-icon {
+    width: 50px;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.linkedin-icon:hover {
+    transform: scale(1.1);
+}

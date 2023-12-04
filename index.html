@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Ruthvik's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="firstSection">
+        <div class="leftSection">
+            Hello, I am <span class="blue">Ruthvik</span>
+            <div>and I am a Passionate<br></div>
+            <span id="element"></span>
+        </div>
+        <div class="rightSection">
+            <img src="bg.png" alt="">
+        </div>
+    </section>
+
+    <section id="about" class="secondSection">
+        <span class="text-gray">LANGUAGES I KNOW</span>
+        <h1> SKILLS</h1>
+        <div class="skills-container">
+            <div class="box">
+                <img src="sk.png" alt="">
+            </div>
+            <div class="skills-text-container">
+                <p class="skills-text">I have expertise in various technologies and frameworks. My goal is to deliver high-quality web solutions that meet clients' needs and exceed their expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="thirdSection">
+        <span class="text-gray">PROJECTS I WORKED ON</span>
+        <div class="project-images">
+            <img class="project-image" src="blog.png" alt="">
+          
+        </div>
+    </section>
+
+    <section id="contact" class="fourthSection">
+        <span class="text-gray">CONTACT ME</span>
+        <div class="contact-content">
+            <p>You can connect with me on LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">
+                <img class="linkedin-icon" src="https://t3.ftcdn.net/jpg/05/32/20/62/360_F_532206294_4x5YYa7e42abtNiOlxoCNIaVNlmft4GO.jpg" alt="LinkedIn Profile">
+            </a>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
